@@ -1,0 +1,3 @@
+*.pdb filter=lfs diff=lfs merge=lfs -text
+*.pch filter=lfs diff=lfs merge=lfs -text
+bin/libCling.dll filter=lfs diff=lfs merge=lfs -text
