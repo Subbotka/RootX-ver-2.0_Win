@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333333;
+            background-color: rgb(255, 250, 237);
+            margin: 0;
+            padding: 20px;
+            height: 100vh;
+            box-sizing: border-box;
+            display: flex;
+            overflow: hidden;
+        }
+
+        .wiki-layout {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            gap: 15px;
+        }
+
+  
+        .nav-sidebar {
+            width: 220px;
+            min-width: 220px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            border-right: 2px solid #868789;
+            padding-right: 15px;
+            height: 100%;
+        }
+
+        .nav-title {
+            font-size: 12px;
+            font-weight: bold;
+            color: #757678;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+            font-family: 'Courier New', monospace;
+        }
+
+        .nav-tab {
+            background-color: #e0ded7;
+            border: 1px solid #757678;
+            border-radius: 4px;
+            padding: 10px 14px;
+            font-size: 13px;
+            font-weight: bold;
+            color: #444444;
+            cursor: pointer;
+            text-align: left;
+        }
+        .nav-tab:hover {
+            background-color: #757678;
+            color: #FFFFFF;
+        }
+        .nav-tab.active {
+            background-color: #868789;
+            color: #FFFFFF;
+            border-color: #636466;
+        }
+
+        .toggle-zone {
+            display: flex;
+            align-items: flex-start;
+            padding-top: 20px;
+        }
+        .toggle-btn {
+            width: 26px;
+            height: 26px;
+            background-color: #868789;
+            border: 1px solid #757678;
+            border-radius: 4px;
+            color: #FFFFFF;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .toggle-btn:hover {
+            background-color: #757678;
+        }
+
+        /* ЗОНА КОНТЕНТА */
+        .content-area {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        h2 {
+            color: #111111;
+            font-size: 22px;
+            margin: 0 0 15px 0;
+            font-weight: bold;
+            border-bottom: 1px solid rgba(134, 135, 137, 0.3);
+            padding-bottom: 8px;
+        }
+
+        .wiki-page {
+            display: none;
+            flex-direction: column;
+        }
+        .wiki-page.active {
+            display: flex;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #222222;
+            margin: 0 0 15px 0;
+        }
+
+        .step-list {
+            margin: 0 0 15px 0;
+            padding-left: 20px;
+        }
+        .step-list li {
+            font-size: 14px;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .gif-container {
+            background-color: rgba(134, 135, 137, 0.05);
+            border: 1px dashed #868789;
+            border-radius: 6px;
+            padding: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+            max-width: 100%;
+        }
+        .wiki-gif {
+            max-width: 100%;
+            max-height: 240px;
+            border-radius: 4px;
+        }
+
+        .code-block {
+            font-family: 'Courier New', monospace;
+            background-color: rgba(0,0,0,0.05);
+            padding: 10px 14px;
+            border-radius: 4px;
+            font-size: 13px;
+            color: #111111;
+            margin-bottom: 15px;
+            border-left: 3px solid #636466;
+        }
+
+        .accent {
+            font-weight: bold;
+            color: #636466;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wiki-layout">
+
+    <!-- Навигация -->
+    <div class="nav-sidebar" id="sidebar">
+        <div class="nav-title">Разделы Wiki</div>
+        <div class="nav-tab active" onclick="switchPage(this, 'page1')">1. Импорт данных</div>
+        <div class="nav-tab" onclick="switchPage(this, 'page2')">2. Структура TTree</div>
+        <div class="nav-tab" onclick="switchPage(this, 'page3')">3. Анализ и Спектры</div>
+    </div>
+
+    <!-- Зона с кнопкой-стрелкой -->
+    <div class="toggle-zone">
+        <button class="toggle-btn" id="toggleBtn" onclick="toggleSidebar()">◀</button>
+    </div>
+
+    <!-- Контент -->
+    <div class="content-area">
+
+        <div id="page1" class="wiki-page active">
+            <h2>Раздел 1: Импорт экспериментальных файлов</h2>
+            <p>Первичный этап работы в RootX заключается в загрузке результатов  данных..</p>
+            <ol class="step-list">
+                <li>Перейдите в праву навигационную панель менеджера проектов.</li>
+                <li>Нажмите левой кнопкой мыше по кнопке +<span class="accent">«Import File»</span>.</li>
+                <li>В открывшемся диалоговом окне укажите путь к файлу, нажатием на файл с расширением <span class="accent">.root</span>.</li>
+            </ol>
+            <div class="gif-container">
+                <img class="wiki-gif" src="qrc:/source/webside/content/fortest.gif" alt="Импорт">
+            </div>
+        </div>
+
+        <div id="page2" class="wiki-page">
+            <h2>Раздел 2: Формирование объектов</h2>
+            <p>Класс <span class="accent">TTree</span> разбивает данные на ветви (<span class="accent">TBranch</span>) и корзины, позволяя считывать только запрашиваемые параметры переменных.</p>
+            <div class="code-block">
+                TFile *f = new TFile("run_capture.root", "RECREATE");<br>
+                TTree *tree = new TTree("T", "Main Data Tree");
+            </div>
+            <div class="gif-container">
+                <img class="wiki-gif" src="qrc:/source/img/step2_tree.gif" alt="TTree">
+            </div>
+        </div>
+
+        <div id="page3" class="wiki-page">
+            <h2>Раздел 3: Тест вкладка</h2>
+            <p>Съешь ещё этих мягких французских булок, да выпей чаю.</p>
+            <div class="gif-container">
+                <img class="wiki-gif" src="qrc:/source/img/step3_plot.gif" alt="Тест">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<script>
+    function switchPage(tabElement, pageId) {
+        var pages = document.querySelectorAll('.wiki-page');
+        for (var i = 0; i < pages.length; i++) {
+            pages[i].style.display = 'none';
+        }
+        document.getElementById(pageId).style.display = 'flex';
+        var tabs = document.querySelectorAll('.nav-tab');
+        for (var j = 0; j < tabs.length; j++) {
+            tabs[j].classList.remove('active');
+        }
+        tabElement.classList.add('active');
+    }
+
+    function toggleSidebar() {
+        var sidebar = document.getElementById('sidebar');
+        var btn = document.getElementById('toggleBtn');
+
+        if (sidebar.style.display === 'none') {
+            sidebar.style.display = 'flex'; 
+            btn.innerHTML = '◀';
+        } else {
+            sidebar.style.display = 'none'; 
+            btn.innerHTML = '▶';
+        }
+    }
+</script>
+</body>
+</html>

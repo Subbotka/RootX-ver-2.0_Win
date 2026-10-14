@@ -1,0 +1,6 @@
+set(__QT_DEPLOY_TARGET_KodoTermSimple_FILE E:/RootX/Models/Lib/KodeTerm/demos/build/KodoTermSimple.exe)
+set(__QT_DEPLOY_TARGET_KodoTermSimple_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_KodoTermSimple_RUNTIME_DLLS C:/Qt/6.7.3/msvc2022_64/bin/Qt6Widgets.dll;C:/Qt/6.7.3/msvc2022_64/bin/Qt6Gui.dll;C:/Qt/6.7.3/msvc2022_64/bin/Qt6Core.dll)
+set(__QT_DEPLOY_TARGET_KodoShell_FILE E:/RootX/Models/Lib/KodeTerm/demos/build/KodoShell.exe)
+set(__QT_DEPLOY_TARGET_KodoShell_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_KodoShell_RUNTIME_DLLS C:/Qt/6.7.3/msvc2022_64/bin/Qt6Widgets.dll;C:/Qt/6.7.3/msvc2022_64/bin/Qt6Gui.dll;C:/Qt/6.7.3/msvc2022_64/bin/Qt6Core.dll)

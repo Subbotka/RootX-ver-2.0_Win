@@ -1,0 +1,8 @@
+E:/RootX/Models/Lib/KodeTerm/demos/build/CMakeFiles/KodoTermSimple.dir
+E:/RootX/Models/Lib/KodeTerm/demos/build/CMakeFiles/KodoShell.dir
+E:/RootX/Models/Lib/KodeTerm/demos/build/CMakeFiles/edit_cache.dir
+E:/RootX/Models/Lib/KodeTerm/demos/build/CMakeFiles/rebuild_cache.dir
+E:/RootX/Models/Lib/KodeTerm/demos/build/CMakeFiles/KodoTermSimple_autogen_timestamp_deps.dir
+E:/RootX/Models/Lib/KodeTerm/demos/build/CMakeFiles/KodoTermSimple_autogen.dir
+E:/RootX/Models/Lib/KodeTerm/demos/build/CMakeFiles/KodoShell_autogen_timestamp_deps.dir
+E:/RootX/Models/Lib/KodeTerm/demos/build/CMakeFiles/KodoShell_autogen.dir

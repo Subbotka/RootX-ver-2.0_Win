@@ -1,0 +1,14 @@
+{
+  "name": "jsroot-demos",
+  "version": "7.11.99",
+  "engines": {
+    "node": ">=0.18"
+  },
+  "description": "JSROOT demos for Node.js",
+  "author": "s.linev@gsi.de",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "jsroot": "file:../../"
+  }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>TMultiGraph creation and update</title>
+   <link rel="shortcut icon" href="../img/RootIcon.ico"/>
+   <script type="importmap">
+      { "imports": { "jsroot": "../modules/main.mjs" } }
+   </script>
+</head>
+
+<body>
+   <div id="object_draw" style="position: relative; width: 1200px; height: 800px;"></div>
+
+   <script type='module'>
+
+      import { createTGraph, createTMultiGraph, redraw } from 'jsroot';
+
+      let cnt = 0;
+
+      function updateGUI() {
+        // this is just generation of graph
+         const npoints = 20;
+         const xpts = [], ypts = [];
+         for (let i = 0; i < npoints; i++) {
+            if (cnt % 2 === 1) {
+               xpts.push(i);
+               ypts.push(5*i);
+            } else {
+               xpts.push(i);
+               ypts.push(i);
+            }
+         }
+         const graph1 = createTGraph(npoints, xpts, ypts);
+         graph1.fLineColor = 2;
+         graph1.fMarkerSize = 2;
+         const xpts2 = [], ypts2 = [];
+         for (let i = 0; i < npoints; i++) {
+            if (cnt%2 === 1) {
+               xpts2.push(i);
+               ypts2.push(i*i);
+            } else {
+               xpts2.push(i);
+               ypts2.push(Math.sqrt(i));
+            }
+         }
+         const graph2 = createTGraph(npoints, xpts2, ypts2);
+         graph2.fLineColor = 3;
+         graph2.fMarkerSize = 2;
+
+         const mgraph = createTMultiGraph(graph1, graph2);
+         mgraph.fTitle = 'Drawing ' + cnt++;
+
+         // set fixed Y-range if required
+         // mgraph.fMinimum = 0;
+         // mgraph.fMaximum = 400;
+
+         redraw('object_draw', mgraph, '').then(() => setTimeout(updateGUI, 3000));
+      }
+
+      updateGUI();
+   </script>
+</body>
+</html>
+

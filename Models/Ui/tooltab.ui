@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>tooltab</class>
+ <widget class="QWidget" name="tooltab">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1234</width>
+    <height>210</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_2">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="styleSheet">
+      <string notr="true">QTabWidget::pane {
+    border: 1px solid #757678;
+    background-color: #868789;
+    position: absolute;
+    top: -1px;
+}
+
+QTabBar::tab {
+    background-color: #757678;
+    color: #ffffff;
+    border: 1px solid #5a5b5d;
+    border-bottom: none;
+    font-weight: bold;
+    text-align: left;
+    padding: 6px 12px;
+    min-width: 80px; 
+    margin-right: 5px; 
+}
+
+QTabBar::tab:selected {
+    background-color: #868789;
+    border-color: #757678;
+    border-bottom-color: #868789;
+}
+
+QTabBar::tab:first {
+    background-color: #fff5cc;
+    border: 1px solid #c1c1c1;
+    border-bottom: none;
+    color: rgb(145, 145, 145);
+}
+
+QTabBar::tab:last {
+    margin-right: 0px;
+}
+</string>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <property name="elideMode">
+      <enum>Qt::TextElideMode::ElideNone</enum>
+     </property>
+     <property name="tabsClosable">
+      <bool>false</bool>
+     </property>
+     <property name="movable">
+      <bool>false</bool>
+     </property>
+     <widget class="QWidget" name="tab">
+      <property name="styleSheet">
+       <string notr="true">    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                      stop:0 lightgray, stop:1 darkgray);</string>
+      </property>
+      <attribute name="title">
+       <string>Главная</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout" stretch="5,1">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QToolButton" name="toolButton">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">/* Базовое состояние кнопки */
+QToolButton {
+    background-color: transparent; 
+    color: #2c3e50;                
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+/* При наведении */
+QToolButton:hover {
+    background-color: #e1e4e6;
+    border: 1px solid #b6b9bc;
+}
+
+/* Когда кнопка зафиксирована */
+QToolButton:checked {
+    background-color: #868789;
+    border: 1px solid #7ea7e9;
+}
+
+/* Меню-стрелочка */
+QToolButton::menu-indicator {
+    image: url(arrow_down.png);
+    subcontrol-position: right center;
+    subcontrol-origin: padding;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Text</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../../rec.qrc">
+               <normaloff>:/source/img/application_go.png</normaloff>:/source/img/application_go.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>48</width>
+               <height>48</height>
+              </size>
+             </property>
+             <property name="popupMode">
+              <enum>QToolButton::ToolButtonPopupMode::DelayedPopup</enum>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonStyle::ToolButtonTextUnderIcon</enum>
+             </property>
+             <property name="autoRaise">
+              <bool>false</bool>
+             </property>
+             <property name="arrowType">
+              <enum>Qt::ArrowType::NoArrow</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="Line" name="line">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="toolButton_2">
+             <property name="text">
+              <string>...</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="toolButton_3">
+             <property name="text">
+              <string>...</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="toolButton_4">
+             <property name="text">
+              <string>...</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>Основное</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item alignment="Qt::AlignmentFlag::AlignBottom">
+        <widget class="Line" name="line_2">
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <property name="styleSheet">
+       <string notr="true">    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                      stop:0 lightgray, stop:1 darkgray);</string>
+      </property>
+      <attribute name="title">
+       <string>Редактировать</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_5"/>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../rec.qrc"/>
+ </resources>
+ <connections/>
+</ui>

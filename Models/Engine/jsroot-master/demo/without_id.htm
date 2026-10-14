@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Example how element pointer can be used</title>
+   <link rel="shortcut icon" href="../img/RootIcon.ico"/>
+   <script type="importmap">
+      { "imports": { "jsroot": "../modules/main.mjs" } }
+   </script>
+</head>
+
+<body>
+   <div style="position: relative; width: 800px; height: 600px;"></div>
+
+   <script type='module'>
+      import { httpRequest, draw } from 'jsroot';
+
+      let path = 'https://root.cern/js/latest/demo/';
+
+      if ((window.location.host.indexOf('root.cern') >= 0) || (window.location.host.indexOf('jsroot.gsi.de') >= 0))
+         path = '';
+
+      const obj = await httpRequest(path + 'hpx.json', 'object');
+
+      // here demonstrated that div can be used without id attribute
+      draw(document.getElementsByTagName('div')[0], obj, 'hist');
+   </script>
+
+</body>
+</html>

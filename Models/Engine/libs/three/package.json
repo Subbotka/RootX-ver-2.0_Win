@@ -1,0 +1,83 @@
+{
+  "name": "three_jsroot",
+  "version": "0.183.0",
+  "type": "module",
+  "description": "JavaScript 3D library",
+  "main": "Three_jsroot.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrdoob/three.js"
+  },
+  "sideEffects": false,
+  "files": [
+    "Three_jsroot.js",
+    "package.json",
+    "README.md"
+  ],
+  "eslintConfig": {
+    "root": true,
+    "extends": "mdcs",
+    "parser": "@babel/eslint-parser",
+    "parserOptions": {
+      "babelOptions": {
+        "configFile": "./.babelrc.json"
+      }
+    },
+    "plugins": [
+      "html"
+    ],
+    "globals": {
+      "potpack": true,
+      "fflate": true,
+      "ZSTDDecoder": true,
+      "bodymovin": true,
+      "OIMO": true,
+      "Stats": true,
+      "XRWebGLBinding": true,
+      "XRWebGLLayer": true
+    },
+    "rules": {
+      "quotes": [
+        "error",
+        "single"
+      ],
+      "prefer-const": [
+        "error",
+        {
+          "destructuring": "any",
+          "ignoreReadBeforeAssign": false
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "build": "cp Three_jsroot.js Three_addons.js ../../../threejs/src && rollup -c rollup_three.config.js && rm -f ../../../threejs/src/Three_jsroot.js ../../../threejs/src/Three_addons.js"
+  },
+  "keywords": [
+    "three",
+    "three.js",
+    "javascript",
+    "3d",
+    "virtual-reality",
+    "augmented-reality",
+    "webgl",
+    "webgl2",
+    "webaudio",
+    "webgpu",
+    "webxr",
+    "canvas",
+    "svg",
+    "html5"
+  ],
+  "author": "mrdoob",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrdoob/three.js/issues"
+  },
+  "homepage": "https://threejs.org/",
+  "devDependencies": {
+    "magic-string": "^0.30.0",
+    "@rollup/plugin-terser": "^0.4.0",
+    "rollup": "^4.6.0"
+  }
+}

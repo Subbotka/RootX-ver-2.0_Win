@@ -1,0 +1,15 @@
+# ninja log v6
+38	140	8105008024946352	KodoTermSimple_autogen/timestamp	d6da1954d68db3db
+38	140	8105008024946352	KodoTermSimple_autogen/mocs_compilation.cpp	d6da1954d68db3db
+38	140	8105008024946352	E:/RootX/Models/Lib/KodeTerm/demos/build/KodoTermSimple_autogen/timestamp	d6da1954d68db3db
+38	140	8105008024946352	E:/RootX/Models/Lib/KodeTerm/demos/build/KodoTermSimple_autogen/mocs_compilation.cpp	d6da1954d68db3db
+144	178	8105008025386750	CMakeFiles/KodoTermSimple.dir/KodoTermSimple_autogen/mocs_compilation.cpp.obj	b23ed76a8ff4c4dd
+46	368	8105008027218419	KodoShell_autogen/timestamp	c3e704385602c64b
+46	368	8105008027218419	KodoShell_autogen/mocs_compilation.cpp	c3e704385602c64b
+46	368	8105008027218419	E:/RootX/Models/Lib/KodeTerm/demos/build/KodoShell_autogen/timestamp	c3e704385602c64b
+46	368	8105008027218419	E:/RootX/Models/Lib/KodeTerm/demos/build/KodoShell_autogen/mocs_compilation.cpp	c3e704385602c64b
+370	401	8105008027648811	CMakeFiles/KodoShell.dir/KodoShell_autogen/mocs_compilation.cpp.obj	31e91696906fadeb
+148	2144	8105008025426789	CMakeFiles/KodoTermSimple.dir/KodoTermSimple.cpp.obj	e8558bae84df78de
+375	2428	8105008027698855	CMakeFiles/KodoShell.dir/KodoShell.cpp.obj	e77465a280ce0b76
+2145	2441	8105008045394495	KodoTermSimple.exe	9870036b4c75c9be
+2428	2610	8105008048237080	KodoShell.exe	ba8a132e0971e63d

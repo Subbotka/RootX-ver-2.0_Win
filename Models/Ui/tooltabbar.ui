@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ToolTabBar</class>
+ <widget class="QWidget" name="ToolTabBar">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>804</width>
+    <height>336</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="styleSheet">
+      <string notr="true">QTabWidget::pane {
+    border: 1px solid #757678;
+    position: absolute;
+    top: -1px;
+}
+QTabBar::tab:selected {
+    background-color: #868789;
+	border-color: #757678;
+    border-bottom-color: #868789;
+}
+QTabBar::tab {
+background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                      stop:0 #a0a1a3, stop:1 #757678);
+    color: #ffffff;
+    border: 1px solid #5a5b5d;
+    border-bottom: none;
+    font-weight: bold;
+    text-align: left;
+    padding: 6px 12px;
+    min-width: 80px; 
+    margin-right: 5px; 
+}
+
+
+
+QTabBar::tab:first {
+    background-color: #fff5cc;
+    border: 1px solid #c1c1c1;
+    border-bottom: none;
+    color: rgb(145, 145, 145);
+}
+
+QTabBar::tab:last {
+    margin-right: 0px;
+}
+</string>
+     </property>
+     <property name="tabPosition">
+      <enum>QTabWidget::TabPosition::North</enum>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Главная</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>5</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                      stop:0 #a0a1a3, stop:1 #757678);</string>
+      </property>
+      <attribute name="title">
+       <string>Редактор</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    qproperty-iconSize: 100px 100px; /* Явно задает размер иконки в QSS */
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="../../rec.qrc">
+           <normaloff>:/source/img/folder_add.png</normaloff>:/source/img/folder_add.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>100</width>
+           <height>100</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>Справка</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tab_4">
+      <attribute name="title">
+       <string>Вид</string>
+      </attribute>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../rec.qrc"/>
+ </resources>
+ <connections/>
+</ui>

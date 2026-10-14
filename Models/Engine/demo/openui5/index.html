@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+   <head>
+      <meta charset="utf-8">
+
+      <title>Nav Container with JSROOT drawings</title>
+   </head>
+
+   <!-- UI Content -->
+   <body class="sapUiBody" id="content" role="application">
+   </body>
+
+   <script type="module">
+
+      import { loadOpenui5, httpRequest, openFile, draw } from '../../modules/main.mjs';
+
+      let sap = await loadOpenui5({ libs: "sap.ui.core, sap.m" });
+
+      globalThis.JSROOT = { httpRequest, openFile, draw };
+
+      sap.ui.loader.config({
+         paths: {
+            "NavExample": "./"
+         }
+      });
+
+      sap.ui.require(["sap/ui/core/ComponentContainer", "sap/m/App", "sap/m/Page" ],
+
+         function(ComponentContainer, mApp, mPage) {
+
+            new mApp ({
+               pages: [
+                  new mPage({
+                     title: "Nav Container",
+                     enableScrolling: true,
+                     content: [ new ComponentContainer({
+                        name: "NavExample"
+                     })]
+                 })
+              ]
+            }).placeAt("content");
+
+        }); // sap.ui.require
+
+   </script>
+
+</html>
