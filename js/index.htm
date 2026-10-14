@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Read a ROOT file</title>
+   <link rel="shortcut icon" href="img/RootIcon.ico"/>
+   <script type="importmap">
+      { "imports": { "jsroot": "./modules/main.mjs" } }
+   </script>
+</head>
+<body>
+
+   <div id="simpleGUI" path="https://root.cern/js/files/" files="ct.root;exclusion.root;fillrandom.root;glbox.root;graph.root;hsimple.root;legends.root;rf107.root;stacks.root;zdemo.root">
+      loading modules ...
+   </div>
+
+   <script type="module">
+      import { buildGUI } from 'jsroot';
+
+      // 1. Проверяем при старте страницы: если в памяти есть сохраненный график, открываем его автоматически
+        const savedSearch = localStorage.getItem('jsroot_forced_url_state');
+        if (savedSearch && !window.location.search) {
+            window.location.search = savedSearch;
+        }
+      // 2. Строим интерфейс
+      buildGUI('simpleGUI').then(hp => {
+          if (!hp) return;
+
+          // 3. Перехватываем функцию создания родного контекстного меню файлов/элементов
+          const oldFillMenu = hp.fillContextMenu;
+          
+          hp.fillContextMenu = function(menu, itemname, obj) {
+              // Сначала даем JSROOT заполнить меню стандартными кнопками (Settings, Close и т.д.)
+              if (oldFillMenu) oldFillMenu.call(this, menu, itemname, obj);
+              
+              // Добавляем разделительную линию в меню
+              menu.add("separator");
+              
+              // ВШИВАЕМ НАШУ КНОПКУ ПРЯМО ТУДА!
+              // Первый параметр - текст, второй - функция, которая сработает при клике
+              menu.add("⭐ Сохранить вид и легенду", () => {
+                  // Получаем имя текущей открытой гистограммы
+                  const currentItem = hp.getDrawItemName ? hp.getDrawItemName() : itemname;
+                  
+                  if (currentItem) {
+                      // Формируем параметры: открыть этот элемент и жестко включить опцию легенды
+                      const query = `?item=${encodeURIComponent(currentItem)}&opt=legend`;
+                      
+                      // Записываем в localStorage намертво
+                      localStorage.setItem('jsroot_forced_menu_state', query);
+                      alert('Сохранено в браузер! Теперь после F5 этот график сам откроется сразу с легендой.');
+                  } else {
+                      alert('Сначала открой саму гистограмму на экран!');
+                  }
+              });
+          };
+      });
+   </script>
+
+</body>
+</html>

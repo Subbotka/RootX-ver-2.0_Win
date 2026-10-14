@@ -1,0 +1,229 @@
+{ decls }
+template <typename VO, typename VI> class RooCFunction1Ref;
+template <typename VO, typename VI> class RooCFunction1Binding;
+template <typename VO, typename VI> class RooCFunction1PdfBinding;
+template <typename VO, typename VI1, typename VI2> class RooCFunction2Ref;
+template <typename VO, typename VI1, typename VI2> class RooCFunction2Binding;
+template <typename VO, typename VI1, typename VI2> class RooCFunction2PdfBinding;
+template <typename VO, typename VI1, typename VI2, typename VI3> class RooCFunction3Ref;
+template <typename VO, typename VI1, typename VI2, typename VI3> class RooCFunction3Binding;
+template <typename VO, typename VI1, typename VI2, typename VI3> class RooCFunction3PdfBinding;
+template <typename VO, typename VI1, typename VI2, typename VI3, typename VI4> class RooCFunction4Ref;
+template <typename VO, typename VI1, typename VI2, typename VI3, typename VI4> class RooCFunction4Binding;
+template <typename VO, typename VI1, typename VI2, typename VI3, typename VI4> class RooCFunction4PdfBinding;
+namespace RooFit { namespace Detail {  } }
+class RooAbsPdf;
+namespace RooFit { namespace Detail { template <typename BaseClass> class RooPyBind; } }
+class RooAbsReal;
+
+[ libRooFit.dll ]
+# List of selected classes
+class Roo2DKeysPdf
+class RooArgusBG
+class RooBCPEffDecay
+class RooBCPGenDecay
+class RooBDecay
+class RooBMixDecay
+class RooBernstein
+class RooBifurGauss
+class RooBlindTools
+class RooBreitWigner
+class RooBukinPdf
+class RooCBShape
+class RooCFunction1Binding<double,Int_t>
+class RooCFunction1Binding<double,double>
+class RooCFunction1Binding<double,int>
+class RooCFunction1PdfBinding<double,Int_t>
+class RooCFunction1PdfBinding<double,double>
+class RooCFunction1PdfBinding<double,int>
+class RooCFunction1Ref<double,Int_t>
+class RooCFunction1Ref<double,double>
+class RooCFunction1Ref<double,int>
+class RooCFunction2Binding<double,Int_t,Int_t>
+class RooCFunction2Binding<double,Int_t,double>
+class RooCFunction2Binding<double,UInt_t,double>
+class RooCFunction2Binding<double,double,Int_t>
+class RooCFunction2Binding<double,double,double>
+class RooCFunction2Binding<double,double,int>
+class RooCFunction2Binding<double,int,double>
+class RooCFunction2Binding<double,int,int>
+class RooCFunction2Binding<double,unsigned int,double>
+class RooCFunction2PdfBinding<double,Int_t,Int_t>
+class RooCFunction2PdfBinding<double,Int_t,double>
+class RooCFunction2PdfBinding<double,UInt_t,double>
+class RooCFunction2PdfBinding<double,double,Int_t>
+class RooCFunction2PdfBinding<double,double,double>
+class RooCFunction2PdfBinding<double,double,int>
+class RooCFunction2PdfBinding<double,int,double>
+class RooCFunction2PdfBinding<double,int,int>
+class RooCFunction2PdfBinding<double,unsigned int,double>
+class RooCFunction2Ref<double,Int_t,Int_t>
+class RooCFunction2Ref<double,Int_t,double>
+class RooCFunction2Ref<double,UInt_t,double>
+class RooCFunction2Ref<double,double,Int_t>
+class RooCFunction2Ref<double,double,double>
+class RooCFunction2Ref<double,double,int>
+class RooCFunction2Ref<double,int,double>
+class RooCFunction2Ref<double,int,int>
+class RooCFunction2Ref<double,unsigned int,double>
+class RooCFunction3Binding<double,UInt_t,UInt_t,double>
+class RooCFunction3Binding<double,UInt_t,double,UInt_t>
+class RooCFunction3Binding<double,UInt_t,double,double>
+class RooCFunction3Binding<double,double,Int_t,Int_t>
+class RooCFunction3Binding<double,double,double,bool>
+class RooCFunction3Binding<double,double,double,double>
+class RooCFunction3Binding<double,double,int,int>
+class RooCFunction3Binding<double,unsigned int,double,double>
+class RooCFunction3Binding<double,unsigned int,double,unsigned int>
+class RooCFunction3Binding<double,unsigned int,unsigned int,double>
+class RooCFunction3PdfBinding<double,UInt_t,UInt_t,double>
+class RooCFunction3PdfBinding<double,UInt_t,double,UInt_t>
+class RooCFunction3PdfBinding<double,UInt_t,double,double>
+class RooCFunction3PdfBinding<double,double,Int_t,Int_t>
+class RooCFunction3PdfBinding<double,double,double,bool>
+class RooCFunction3PdfBinding<double,double,double,double>
+class RooCFunction3PdfBinding<double,double,int,int>
+class RooCFunction3PdfBinding<double,unsigned int,double,double>
+class RooCFunction3PdfBinding<double,unsigned int,double,unsigned int>
+class RooCFunction3PdfBinding<double,unsigned int,unsigned int,double>
+class RooCFunction3Ref<double,UInt_t,UInt_t,double>
+class RooCFunction3Ref<double,UInt_t,double,UInt_t>
+class RooCFunction3Ref<double,UInt_t,double,double>
+class RooCFunction3Ref<double,double,Int_t,Int_t>
+class RooCFunction3Ref<double,double,double,bool>
+class RooCFunction3Ref<double,double,double,double>
+class RooCFunction3Ref<double,double,int,int>
+class RooCFunction3Ref<double,unsigned int,double,double>
+class RooCFunction3Ref<double,unsigned int,double,unsigned int>
+class RooCFunction3Ref<double,unsigned int,unsigned int,double>
+class RooCFunction4Binding<double,double,double,double,Int_t>
+class RooCFunction4Binding<double,double,double,double,bool>
+class RooCFunction4Binding<double,double,double,double,double>
+class RooCFunction4Binding<double,double,double,double,int>
+class RooCFunction4PdfBinding<double,double,double,double,Int_t>
+class RooCFunction4PdfBinding<double,double,double,double,bool>
+class RooCFunction4PdfBinding<double,double,double,double,double>
+class RooCFunction4PdfBinding<double,double,double,double,int>
+class RooCFunction4Ref<double,double,double,double,Int_t>
+class RooCFunction4Ref<double,double,double,double,bool>
+class RooCFunction4Ref<double,double,double,double,double>
+class RooCFunction4Ref<double,double,double,double,int>
+class RooChebychev
+class RooChi2MCSModule
+class RooChiSquarePdf
+class RooCrystalBall
+class RooDecay
+class RooDstD0BG
+class RooExponential
+class RooFit::Detail::RooMomentMorphFraction
+class RooFit::Detail::RooPyBind<RooAbsPdf>
+class RooFit::Detail::RooPyBind<RooAbsReal>
+class RooFit::Detail::RooPyBind<class RooAbsPdf>
+class RooFit::Detail::RooPyBind<class RooAbsReal>
+class RooFunctor1DBinding
+class RooFunctor1DPdfBinding
+class RooFunctorBinding
+class RooFunctorPdfBinding
+class RooGExpModel
+class RooGamma
+class RooGaussExpTails
+class RooGaussModel
+class RooGaussian
+class RooHistConstraint
+class RooIntegralMorph
+class RooIntegralMorph::MorphCacheElem
+class RooJeffreysPrior
+class RooJohnson
+class RooKeysPdf
+class RooLagrangianMorphFunc
+class RooLagrangianMorphFunc::Config
+class RooLandau
+class RooLegacyExpPoly
+class RooLognormal
+class RooMomentMorph
+class RooMomentMorphFunc
+class RooMomentMorphFuncND
+class RooMomentMorphFuncND::Grid2
+class RooMultiBinomial
+class RooNDKeysPdf
+class RooNDKeysPdf::BoxInfo
+class RooNonCPEigenDecay
+class RooNovosibirsk
+class RooONNXFunc
+class RooParamHistFunc
+class RooParametricStepFunction
+class RooPoisson
+class RooPolynomial
+class RooPowerSum
+class RooSpline
+class RooStepFunction
+class RooStudentT
+class RooTFnBinding
+class RooTFnPdfBinding
+class RooUnblindCPAsymVar
+class RooUnblindOffset
+class RooUnblindPrecision
+class RooUnblindUniform
+class RooUniform
+class RooVoigtian
+header Roo2DKeysPdf.h
+header RooArgusBG.h
+header RooBCPEffDecay.h
+header RooBCPGenDecay.h
+header RooBDecay.h
+header RooBMixDecay.h
+header RooBernstein.h
+header RooBifurGauss.h
+header RooBlindTools.h
+header RooBreitWigner.h
+header RooBukinPdf.h
+header RooCBShape.h
+header RooChebychev.h
+header RooChi2MCSModule.h
+header RooChiSquarePdf.h
+header RooCrystalBall.h
+header RooDecay.h
+header RooDstD0BG.h
+header RooExponential.h
+header RooMomentMorphFuncND.h
+header RooFunctor1DBinding.h
+header RooFunctorBinding.h
+header RooGExpModel.h
+header RooGamma.h
+header RooGaussExpTails.h
+header RooGaussModel.h
+header RooGaussian.h
+header RooHistConstraint.h
+header RooIntegralMorph.h
+header RooJeffreysPrior.h
+header RooJohnson.h
+header RooKeysPdf.h
+header RooLagrangianMorphFunc.h
+header RooLandau.h
+header RooLegacyExpPoly.h
+header RooLognormal.h
+header RooMomentMorph.h
+header RooMomentMorphFunc.h
+header RooMultiBinomial.h
+header RooNDKeysPdf.h
+header RooNonCPEigenDecay.h
+header RooNovosibirsk.h
+header RooONNXFunc.h
+header RooParamHistFunc.h
+header RooParametricStepFunction.h
+header RooPoisson.h
+header RooPolynomial.h
+header RooPowerSum.h
+header RooSpline.h
+header RooStepFunction.h
+header RooStudentT.h
+header RooTFnBinding.h
+header RooTFnPdfBinding.h
+header RooUnblindCPAsymVar.h
+header RooUnblindOffset.h
+header RooUnblindPrecision.h
+header RooUnblindUniform.h
+header RooUniform.h
+header RooVoigtian.h
+# List of selected namespaces
+namespace RooFit

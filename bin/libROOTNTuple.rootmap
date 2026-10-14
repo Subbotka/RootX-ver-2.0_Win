@@ -1,0 +1,6 @@
+{ decls }
+namespace ROOT {  }
+
+[ libROOTNTuple.dll ]
+# List of selected classes
+class ROOT::RNTuple

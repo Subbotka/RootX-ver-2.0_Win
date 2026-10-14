@@ -1,0 +1,8 @@
+{ decls }
+namespace ROOT {  }
+
+[ libROOTTreeViewer.dll ]
+# List of selected classes
+class ROOT::RTreeViewer
+class ROOT::RTreeViewer::RBranchInfo
+class ROOT::RTreeViewer::RConfig

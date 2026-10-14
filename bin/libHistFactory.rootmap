@@ -1,0 +1,46 @@
+{ decls }
+namespace std {  }
+namespace RooStats { namespace HistFactory {  } }
+
+[ libHistFactory.dll ]
+# List of selected classes
+class ParamHistFunc
+class PiecewiseInterpolation
+class RooStats::HistFactory::Asimov
+class RooStats::HistFactory::Channel
+class RooStats::HistFactory::Data
+class RooStats::HistFactory::FlexibleInterpVar
+class RooStats::HistFactory::HistFactoryNavigation
+class RooStats::HistFactory::HistRef
+class RooStats::HistFactory::HistoFactor
+class RooStats::HistFactory::HistoSys
+class RooStats::HistFactory::HistoToWorkspaceFactoryFast
+class RooStats::HistFactory::HistogramUncertaintyBase
+class RooStats::HistFactory::LinInterpVar
+class RooStats::HistFactory::Measurement
+class RooStats::HistFactory::NormFactor
+class RooStats::HistFactory::OverallSys
+class RooStats::HistFactory::PreprocessFunction
+class RooStats::HistFactory::RooBarlowBeestonLL
+class RooStats::HistFactory::Sample
+class RooStats::HistFactory::ShapeFactor
+class RooStats::HistFactory::ShapeSys
+class RooStats::HistFactory::StatError
+class RooStats::HistFactory::StatErrorConfig
+class vector<RooStats::HistFactory::Channel>
+class vector<RooStats::HistFactory::HistRef>
+class vector<RooStats::HistFactory::Sample>
+class vector<class RooStats::HistFactory::Channel>
+class vector<class RooStats::HistFactory::HistRef>
+class vector<class RooStats::HistFactory::Sample>
+header RooStats\HistFactory\ParamHistFunc.h
+header RooStats\HistFactory\PiecewiseInterpolation.h
+header RooStats\HistFactory\Measurement.h
+header RooStats\HistFactory\FlexibleInterpVar.h
+header RooStats\HistFactory\HistFactoryNavigation.h
+header RooStats\HistFactory\HistoToWorkspaceFactoryFast.h
+header RooStats\HistFactory\LinInterpVar.h
+header RooStats\HistFactory\RooBarlowBeestonLL.h
+# List of selected namespaces
+namespace RooStats
+namespace RooStats::HistFactory

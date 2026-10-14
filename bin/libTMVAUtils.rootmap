@@ -1,0 +1,9 @@
+{ decls }
+namespace TMVA { namespace Experimental {  } }
+namespace TMVA { namespace Experimental { template <typename V, typename C> class RTensor; } }
+
+[ libTMVAUtils.dll ]
+# List of selected classes
+class TMVA::Experimental::RBDT
+class TMVA::Experimental::RTensor<float,std::vector<float> >
+class TMVA::Experimental::RTensor<float,vector<float> >

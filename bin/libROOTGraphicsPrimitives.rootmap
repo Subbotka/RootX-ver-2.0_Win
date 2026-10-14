@@ -1,0 +1,15 @@
+{ decls }
+namespace ROOT { namespace Experimental {  } }
+
+[ libROOTGraphicsPrimitives.dll ]
+# List of selected classes
+class ROOT::Experimental::RBox
+class ROOT::Experimental::RFont
+class ROOT::Experimental::RFrameTitle
+class ROOT::Experimental::RLegend
+class ROOT::Experimental::RLegend::RCustomDrawable
+class ROOT::Experimental::RLegend::REntry
+class ROOT::Experimental::RLine
+class ROOT::Experimental::RMarker
+class ROOT::Experimental::RPaveText
+class ROOT::Experimental::RText

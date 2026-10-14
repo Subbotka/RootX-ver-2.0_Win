@@ -1,0 +1,11 @@
+{ decls }
+namespace ROOT {  }
+
+[ libROOTBrowserv7.dll ]
+# List of selected classes
+class ROOT::RBrowser
+class ROOT::RBrowserData
+class ROOT::RBrowserReply
+class ROOT::RBrowserRequest
+class ROOT::RFileDialog
+class ROOT::RWebBrowserImp

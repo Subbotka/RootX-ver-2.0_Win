@@ -1,0 +1,14 @@
+[ libUnfold.dll ]
+# List of selected classes
+class TUnfold
+class TUnfoldBinning
+class TUnfoldBinningXML
+class TUnfoldDensity
+class TUnfoldIterativeEM
+class TUnfoldSys
+header TUnfold.h
+header TUnfoldBinning.h
+header TUnfoldBinningXML.h
+header TUnfoldDensity.h
+header TUnfoldIterativeEM.h
+header TUnfoldSys.h

@@ -1,0 +1,15 @@
+{ decls }
+namespace TMVA { namespace Experimental { namespace SOFIE {  } } }
+
+[ libROOTTMVASofie.dll ]
+# List of selected classes
+class TMVA::Experimental::SOFIE::Dim
+class TMVA::Experimental::SOFIE::GNN_Data
+class TMVA::Experimental::SOFIE::InitializedTensor
+class TMVA::Experimental::SOFIE::InputTensorInfo
+class TMVA::Experimental::SOFIE::RModel
+class TMVA::Experimental::SOFIE::RModel_Base
+class TMVA::Experimental::SOFIE::ROperator
+class TMVA::Experimental::SOFIE::TensorInfo
+# List of selected namespaces
+namespace TMVA::Experimental::SOFIE

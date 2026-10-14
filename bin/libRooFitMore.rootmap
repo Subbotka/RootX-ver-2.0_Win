@@ -1,0 +1,10 @@
+[ libRooFitMore.dll ]
+# List of selected classes
+class RooHypatia2
+class RooLegendre
+class RooNonCentralChiSquare
+class RooSpHarmonic
+header RooHypatia2.h
+header RooLegendre.h
+header RooNonCentralChiSquare.h
+header RooSpHarmonic.h

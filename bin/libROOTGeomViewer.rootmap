@@ -1,0 +1,19 @@
+{ decls }
+namespace ROOT {  }
+
+[ libROOTGeomViewer.dll ]
+# List of selected classes
+class ROOT::RGeoItem
+class ROOT::RGeoPainter
+class ROOT::RGeomConfig
+class ROOT::RGeomDescription
+class ROOT::RGeomDrawing
+class ROOT::RGeomHierarchy
+class ROOT::RGeomNode
+class ROOT::RGeomNodeBase
+class ROOT::RGeomNodeInfo
+class ROOT::RGeomRawRenderInfo
+class ROOT::RGeomRenderInfo
+class ROOT::RGeomShapeRenderInfo
+class ROOT::RGeomViewer
+class ROOT::RGeomVisible

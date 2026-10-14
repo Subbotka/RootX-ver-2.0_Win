@@ -1,0 +1,87 @@
+{ decls }
+namespace ROOT { namespace RDF {  } }
+namespace ROOT { namespace Detail { namespace RDF {  } } }
+namespace ROOT { namespace Detail { namespace RDF { template <typename T> class RMergeableValue; } } }
+class TH1D;
+class TGraph;
+class TGraphAsymmErrors;
+class TH2D;
+class TH3D;
+template <typename T> class THnT;
+class TProfile;
+class TProfile2D;
+class TStatistic;
+namespace ROOT { namespace Internal { namespace RDF {  } } }
+namespace ROOT { namespace Internal { namespace RDF { class RNewSampleFlag; } } }
+template <typename Type> class TNotifyLink;
+namespace ROOT { namespace Detail { namespace RDF { class RDefineBase; } } }
+namespace ROOT { namespace RDF { template <typename T> class RInterface; } }
+namespace ROOT { namespace Detail { namespace RDF { class RFilterBase; } } }
+namespace ROOT {  }
+
+[ libROOTDataFrame.dll ]
+# List of selected classes
+class ROOT::Detail::RDF::RDefineBase
+class ROOT::Detail::RDF::RFilterBase
+class ROOT::Detail::RDF::RJittedDefine
+class ROOT::Detail::RDF::RJittedFilter
+class ROOT::Detail::RDF::RLoopManager
+class ROOT::Detail::RDF::RMergeableValue<Long64_t>
+class ROOT::Detail::RDF::RMergeableValue<TGraph>
+class ROOT::Detail::RDF::RMergeableValue<TGraphAsymmErrors>
+class ROOT::Detail::RDF::RMergeableValue<TH1D>
+class ROOT::Detail::RDF::RMergeableValue<TH2D>
+class ROOT::Detail::RDF::RMergeableValue<TH3D>
+class ROOT::Detail::RDF::RMergeableValue<THnD>
+class ROOT::Detail::RDF::RMergeableValue<THnT<double> >
+class ROOT::Detail::RDF::RMergeableValue<TProfile2D>
+class ROOT::Detail::RDF::RMergeableValue<TProfile>
+class ROOT::Detail::RDF::RMergeableValue<TStatistic>
+class ROOT::Detail::RDF::RMergeableValue<ULong64_t>
+class ROOT::Detail::RDF::RMergeableValue<__int64>
+class ROOT::Detail::RDF::RMergeableValue<class TGraph>
+class ROOT::Detail::RDF::RMergeableValue<class TGraphAsymmErrors>
+class ROOT::Detail::RDF::RMergeableValue<class TH1D>
+class ROOT::Detail::RDF::RMergeableValue<class TH2D>
+class ROOT::Detail::RDF::RMergeableValue<class TH3D>
+class ROOT::Detail::RDF::RMergeableValue<class TProfile2D>
+class ROOT::Detail::RDF::RMergeableValue<class TProfile>
+class ROOT::Detail::RDF::RMergeableValue<class TStatistic>
+class ROOT::Detail::RDF::RMergeableValue<double>
+class ROOT::Detail::RDF::RMergeableValue<float>
+class ROOT::Detail::RDF::RMergeableValue<int>
+class ROOT::Detail::RDF::RMergeableValue<unsigned __int64>
+class ROOT::Detail::RDF::RMergeableValue<unsigned int>
+class ROOT::Detail::RDF::RMergeableValueBase
+class ROOT::Detail::RDF::RMergeableVariationsBase
+class ROOT::Detail::RDF::RRangeBase
+class ROOT::Internal::RDF::BufferedFillHelper
+class ROOT::Internal::RDF::CountHelper
+class ROOT::Internal::RDF::MeanHelper
+class ROOT::Internal::RDF::RActionBase
+class ROOT::Internal::RDF::RColumnRegister
+class ROOT::Internal::RDF::RIgnoreErrorLevelRAII
+class ROOT::Internal::RDF::RJittedAction
+class ROOT::Internal::RDF::RRootDS
+class ROOT::RDF::RCsvDS
+class ROOT::RDF::RCutFlowReport
+class ROOT::RDF::RDisplay
+class ROOT::RDF::RInterface<ROOT::Detail::RDF::RDefineBase>
+class ROOT::RDF::RInterface<ROOT::Detail::RDF::RFilterBase>
+class ROOT::RDF::RInterface<class ROOT::Detail::RDF::RDefineBase>
+class ROOT::RDF::RInterface<class ROOT::Detail::RDF::RFilterBase>
+class ROOT::RDF::RTrivialDS
+class ROOT::RDF::TCutInfo
+class ROOT::RDF::TH1DModel
+class ROOT::RDF::TH2DModel
+class ROOT::RDF::TH3DModel
+class ROOT::RDF::TProfile1DModel
+class ROOT::RDF::TProfile2DModel
+class ROOT::RDataFrame
+class TNotifyLink<ROOT::Internal::RDF::RNewSampleFlag>
+class TNotifyLink<struct ROOT::Internal::RDF::RNewSampleFlag>
+# List of selected namespaces
+namespace ROOT::Detail::RDF
+namespace ROOT::RDF
+namespace ROOT::Internal::RDF
+namespace ROOT::Internal::RDF::GraphDrawing

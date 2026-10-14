@@ -1,0 +1,75 @@
+{ decls }
+namespace ROOT { namespace Deprecated {  } }
+
+[ libNet.dll ]
+# List of selected classes
+class ROOT::Deprecated::TFTP
+class ROOT::Deprecated::TGrid
+class ROOT::Deprecated::TGridCollection
+class ROOT::Deprecated::TGridJDL
+class ROOT::Deprecated::TGridJob
+class ROOT::Deprecated::TGridJobStatus
+class ROOT::Deprecated::TGridJobStatusList
+class ROOT::Deprecated::TGridResult
+class ROOT::Deprecated::TNetFile
+class ROOT::Deprecated::TNetFileStager
+class ROOT::Deprecated::TNetSystem
+class ROOT::Deprecated::TSecContext
+class ROOT::Deprecated::TSecContextCleanup
+class ROOT::Deprecated::TWebFile
+class ROOT::Deprecated::TWebSystem
+class TApplicationRemote
+class TApplicationServer
+class TFileStager
+class TMessage
+class TMonitor
+class TPServerSocket
+class TPSocket
+class TParallelMergingFile
+class TSQLColumnInfo
+class TSQLMonitoringWriter
+class TSQLResult
+class TSQLRow
+class TSQLServer
+class TSQLStatement
+class TSQLTableInfo
+class TServerSocket
+class TSocket
+class TUDPSocket
+header TFTP.h
+header TGrid.h
+header TGridCollection.h
+header TGridJDL.h
+header TGridJob.h
+header TGridJobStatus.h
+header TGridJobStatusList.h
+header TGridResult.h
+header TNetFile.h
+header TNetFileStager.h
+header TSecContext.h
+header TWebFile.h
+header TApplicationRemote.h
+header TApplicationServer.h
+header TFileStager.h
+header TMessage.h
+header TMonitor.h
+header TPServerSocket.h
+header TPSocket.h
+header TParallelMergingFile.h
+header TSQLColumnInfo.h
+header TSQLMonitoring.h
+header TSQLResult.h
+header TSQLRow.h
+header TSQLServer.h
+header TSQLStatement.h
+header TSQLTableInfo.h
+header TServerSocket.h
+header TSocket.h
+header TUDPSocket.h
+# List of selected enums and outer classes
+enum EMessageTypes
+enum ESockOptions
+enum ESendRecvOptions
+# List of selected vars
+var ROOT::Deprecated::gGrid
+var gGridJobStatusList

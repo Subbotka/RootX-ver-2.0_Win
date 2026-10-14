@@ -1,0 +1,9 @@
+{ decls }
+namespace ROOT {  }
+
+[ libROOTWebDisplay.dll ]
+# List of selected classes
+class ROOT::RWebDisplayArgs
+class ROOT::RWebDisplayHandle
+class ROOT::RWebWindow
+class ROOT::RWebWindowsManager

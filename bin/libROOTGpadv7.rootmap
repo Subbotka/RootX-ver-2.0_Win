@@ -1,0 +1,100 @@
+{ decls }
+namespace std {  }
+namespace ROOT { namespace Experimental {  } }
+namespace ROOT { namespace Experimental { namespace Internal {  } } }
+namespace ROOT { namespace Experimental { class RDrawable; } }
+namespace ROOT { namespace Experimental { namespace Internal { template <typename T> class RIOShared; } } }
+class TObject;
+namespace ROOT { namespace Experimental { class RColor; } }
+namespace ROOT { namespace Experimental { template <typename T> class RAttrValue; } }
+namespace ROOT { namespace Experimental { class RPadLength; } }
+namespace ROOT { namespace Experimental { namespace Detail {  } } }
+
+[ libROOTGpadv7.dll ]
+# List of selected classes
+class ROOT::Experimental::Detail::RArgsMenuItem
+class ROOT::Experimental::Detail::RCheckedMenuItem
+class ROOT::Experimental::Detail::RMenuArgument
+class ROOT::Experimental::Detail::RMenuItem
+class ROOT::Experimental::Internal::RIOShared<ROOT::Experimental::RDrawable>
+class ROOT::Experimental::Internal::RIOShared<TObject>
+class ROOT::Experimental::Internal::RIOShared<class ROOT::Experimental::RDrawable>
+class ROOT::Experimental::Internal::RIOShared<class TObject>
+class ROOT::Experimental::Internal::RIOSharedBase
+class ROOT::Experimental::RAttrAggregation
+class ROOT::Experimental::RAttrAxis
+class ROOT::Experimental::RAttrAxisLabels
+class ROOT::Experimental::RAttrAxisTicks
+class ROOT::Experimental::RAttrAxisTitle
+class ROOT::Experimental::RAttrBase
+class ROOT::Experimental::RAttrBorder
+class ROOT::Experimental::RAttrFill
+class ROOT::Experimental::RAttrFont
+class ROOT::Experimental::RAttrLine
+class ROOT::Experimental::RAttrLineEnding
+class ROOT::Experimental::RAttrMap
+class ROOT::Experimental::RAttrMap::BoolValue_t
+class ROOT::Experimental::RAttrMap::DoubleValue_t
+class ROOT::Experimental::RAttrMap::IntValue_t
+class ROOT::Experimental::RAttrMap::NoValue_t
+class ROOT::Experimental::RAttrMap::StringValue_t
+class ROOT::Experimental::RAttrMap::Value_t
+class ROOT::Experimental::RAttrMargins
+class ROOT::Experimental::RAttrMarker
+class ROOT::Experimental::RAttrText
+class ROOT::Experimental::RAttrValue<ROOT::Experimental::RColor>
+class ROOT::Experimental::RAttrValue<ROOT::Experimental::RPadLength>
+class ROOT::Experimental::RAttrValue<basic_string<char,struct std::char_traits<char>,allocator<char> > >
+class ROOT::Experimental::RAttrValue<bool>
+class ROOT::Experimental::RAttrValue<class ROOT::Experimental::RColor>
+class ROOT::Experimental::RAttrValue<class ROOT::Experimental::RPadLength>
+class ROOT::Experimental::RAttrValue<double>
+class ROOT::Experimental::RAttrValue<int>
+class ROOT::Experimental::RAttrValue<std::string>
+class ROOT::Experimental::RAttrValue<string>
+class ROOT::Experimental::RAxisDrawable
+class ROOT::Experimental::RCanvas
+class ROOT::Experimental::RCanvasDisplayItem
+class ROOT::Experimental::RChangeAttrRequest
+class ROOT::Experimental::RColor
+class ROOT::Experimental::RDisplayItem
+class ROOT::Experimental::RDrawable
+class ROOT::Experimental::RDrawableDisplayItem
+class ROOT::Experimental::RDrawableExecRequest
+class ROOT::Experimental::RDrawableMenuRequest
+class ROOT::Experimental::RDrawableReply
+class ROOT::Experimental::RDrawableRequest
+class ROOT::Experimental::RFrame
+class ROOT::Experimental::RFrame::RUserRanges
+class ROOT::Experimental::RFrame::RZoomRequest
+class ROOT::Experimental::RIndirectDisplayItem
+class ROOT::Experimental::RMenuItems
+class ROOT::Experimental::ROnFrameDrawable
+class ROOT::Experimental::RPad
+class ROOT::Experimental::RPadBase
+class ROOT::Experimental::RPadBaseDisplayItem
+class ROOT::Experimental::RPadDisplayItem
+class ROOT::Experimental::RPadExtent
+class ROOT::Experimental::RPadLength
+class ROOT::Experimental::RPadLength::CoordSysBase<ROOT::Experimental::RPadLength::Normal>
+class ROOT::Experimental::RPadLength::CoordSysBase<ROOT::Experimental::RPadLength::Pixel>
+class ROOT::Experimental::RPadLength::CoordSysBase<ROOT::Experimental::RPadLength::User>
+class ROOT::Experimental::RPadLength::CoordSysBase<struct ROOT::Experimental::RPadLength::Normal>
+class ROOT::Experimental::RPadLength::CoordSysBase<struct ROOT::Experimental::RPadLength::Pixel>
+class ROOT::Experimental::RPadLength::CoordSysBase<struct ROOT::Experimental::RPadLength::User>
+class ROOT::Experimental::RPadLength::Normal
+class ROOT::Experimental::RPadLength::Pixel
+class ROOT::Experimental::RPadLength::User
+class ROOT::Experimental::RPadPos
+class ROOT::Experimental::RPalette
+class ROOT::Experimental::RPalette::OrdinalAndColor
+class ROOT::Experimental::RPaletteDrawable
+class ROOT::Experimental::RPave
+class ROOT::Experimental::RStyle
+class ROOT::Experimental::RStyle::Block_t
+class ROOT::Experimental::TObjectDisplayItem
+class ROOT::Experimental::TObjectDrawable
+class vector<ROOT::Experimental::Detail::RMenuArgument>
+class vector<ROOT::Experimental::Detail::RMenuItem*>
+class vector<class ROOT::Experimental::Detail::RMenuArgument>
+class vector<class ROOT::Experimental::Detail::RMenuItem*__ptr64>

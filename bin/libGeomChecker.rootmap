@@ -1,0 +1,6 @@
+[ libGeomChecker.dll ]
+# List of selected classes
+class TGeoChecker
+class TGeoOverlap
+header TGeoChecker.h
+header TGeoOverlap.h

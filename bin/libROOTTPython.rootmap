@@ -1,0 +1,8 @@
+[ libROOTTPython.dll ]
+# List of selected classes
+class TPyArg
+class TPyReturn
+class TPython
+header TPyArg.h
+header TPyReturn.h
+header TPython.h

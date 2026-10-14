@@ -1,0 +1,7 @@
+{ decls }
+namespace ROOT { namespace Experimental {  } }
+
+[ libROOTTreeMap.dll ]
+# List of selected classes
+class ROOT::Experimental::RTreeMapBase
+class ROOT::Experimental::RTreeMapPainter

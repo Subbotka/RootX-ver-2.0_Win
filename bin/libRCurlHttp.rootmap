@@ -1,0 +1,8 @@
+{ decls }
+namespace ROOT { namespace Internal {  } }
+
+[ libRCurlHttp.dll ]
+# List of selected classes
+class ROOT::Internal::RRawFileCurl
+class TCurlFile
+header TCurlFile.h

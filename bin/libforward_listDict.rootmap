@@ -1,0 +1,15 @@
+{ decls }
+namespace std {  }
+
+[ libforward_listDict.dll ]
+# List of selected classes
+class forward_list<basic_string<char,struct std::char_traits<char>,allocator<char> > >
+class forward_list<char*>
+class forward_list<char*__ptr64>
+class forward_list<double>
+class forward_list<float>
+class forward_list<int>
+class forward_list<long>
+class forward_list<string>
+class forward_list<void*>
+class forward_list<void*__ptr64>

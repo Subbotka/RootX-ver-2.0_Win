@@ -1,0 +1,10 @@
+{ decls }
+namespace RooFit { namespace JSONIO {  } }
+
+[ libRooFitHS3.dll ]
+# List of selected classes
+class RooFit::JSONIO::Exporter
+class RooFit::JSONIO::Importer
+class RooJSONFactoryWSTool
+header RooFitHS3\JSONIO.h
+header RooFitHS3\RooJSONFactoryWSTool.h

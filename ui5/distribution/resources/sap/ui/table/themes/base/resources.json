@@ -1,0 +1,114 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".theming",
+			"size": 116,
+			"theme": "base"
+		},
+		{
+			"name": "AnalyticalTable.less",
+			"size": 1121,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "Cell.less",
+			"size": 10886,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "CreationRow.less",
+			"size": 2176,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "DragDrop.less",
+			"size": 7430,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "Grouping.less",
+			"size": 6852,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "Row.less",
+			"size": 2335,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "RowAction.less",
+			"size": 1411,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "RowHighlight.less",
+			"size": 3071,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "RowSelection.less",
+			"size": 4511,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "Scrolling.less",
+			"size": 9431,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "ScrollingIOS.less",
+			"size": 448,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "Table.less",
+			"size": 12352,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "library-RTL.css",
+			"size": 68698,
+			"theme": "base"
+		},
+		{
+			"name": "library-parameters.json",
+			"module": "sap/ui/table/themes/base/library-parameters.json",
+			"size": 6075,
+			"theme": "base"
+		},
+		{
+			"name": "library.css",
+			"size": 68715,
+			"theme": "base"
+		},
+		{
+			"name": "library.less",
+			"size": 66091,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "library.source.less",
+			"size": 3491,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "resources.json",
+			"size": 1823
+		}
+	]
+}

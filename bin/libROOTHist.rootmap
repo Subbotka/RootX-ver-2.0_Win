@@ -1,0 +1,41 @@
+{ decls }
+namespace ROOT { namespace Experimental {  } }
+namespace ROOT { namespace Experimental { class RBinWithError; } }
+namespace ROOT { namespace Experimental { template <typename BinContentType> class RHistEngine; } }
+namespace ROOT { namespace Experimental { namespace Internal {  } } }
+namespace ROOT { namespace Experimental { template <typename T> class RHist; } }
+
+[ libROOTHist.dll ]
+# List of selected classes
+class ROOT::Experimental::Internal::RAxes
+class ROOT::Experimental::RAxisVariant
+class ROOT::Experimental::RCategoricalAxis
+class ROOT::Experimental::RHist<Long64_t>
+class ROOT::Experimental::RHist<ROOT::Experimental::RBinWithError>
+class ROOT::Experimental::RHist<ULong64_t>
+class ROOT::Experimental::RHist<__int64>
+class ROOT::Experimental::RHist<double>
+class ROOT::Experimental::RHist<float>
+class ROOT::Experimental::RHist<int>
+class ROOT::Experimental::RHist<long>
+class ROOT::Experimental::RHist<struct ROOT::Experimental::RBinWithError>
+class ROOT::Experimental::RHist<unsigned __int64>
+class ROOT::Experimental::RHist<unsigned int>
+class ROOT::Experimental::RHist<unsigned long>
+class ROOT::Experimental::RHist<unsigned>
+class ROOT::Experimental::RHistEngine<Long64_t>
+class ROOT::Experimental::RHistEngine<ROOT::Experimental::RBinWithError>
+class ROOT::Experimental::RHistEngine<ULong64_t>
+class ROOT::Experimental::RHistEngine<__int64>
+class ROOT::Experimental::RHistEngine<double>
+class ROOT::Experimental::RHistEngine<float>
+class ROOT::Experimental::RHistEngine<int>
+class ROOT::Experimental::RHistEngine<long>
+class ROOT::Experimental::RHistEngine<struct ROOT::Experimental::RBinWithError>
+class ROOT::Experimental::RHistEngine<unsigned __int64>
+class ROOT::Experimental::RHistEngine<unsigned int>
+class ROOT::Experimental::RHistEngine<unsigned long>
+class ROOT::Experimental::RHistEngine<unsigned>
+class ROOT::Experimental::RHistStats
+class ROOT::Experimental::RRegularAxis
+class ROOT::Experimental::RVariableBinAxis

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Building three.js model for supported classes</title>
+   <meta charset="utf-8">
+   <link rel="shortcut icon" href="../img/RootIcon.ico"/>
+   <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+   <style>
+      body {
+         font-family: Monospace;
+         background-color: #000;
+         margin: 0px;
+         overflow: hidden;
+      }
+   </style>
+   <script type="importmap">
+      { "imports": { "jsroot": "../modules/main.mjs", "three": "../modules/three.mjs" } }
+   </script>
+</head>
+
+<body>
+   <script type='module'>
+
+      import { httpRequest, create, openFile, treeDraw, build3d } from 'jsroot';
+
+      import { Box3, Vector3, PerspectiveCamera, Scene, AmbientLight, DirectionalLight, DoubleSide,
+               MeshLambertMaterial, Mesh, TetrahedronGeometry, WebGLRenderer } from 'three';
+
+      import Stats from 'https://threejs.org/examples/jsm/libs/stats.module.js';
+
+      let container, stats,  camera, scene, renderer, draw_size = 400;
+
+      function onWindowResize() {
+         camera.aspect = window.innerWidth / window.innerHeight;
+         camera.updateProjectionMatrix();
+         renderer.setSize( window.innerWidth, window.innerHeight );
+      }
+
+      function animate() {
+         requestAnimationFrame( animate );
+         render();
+         stats.update();
+      }
+
+      function render() {
+         let timer = Date.now() * 0.0001;
+         camera.lookAt( scene.position );
+
+         for (let i = 0, l = scene.children.length; i < l; i++) {
+            let object = scene.children[ i ];
+            object.rotation.z = timer * 5;
+         }
+
+         renderer.render( scene, camera );
+      }
+
+      async function create3d(obj, opt, x = 0, lbl = '', scale = 1) {
+         return build3d(obj, opt).then(obj3d => {
+            obj3d.position.x = x;
+            if (scale === 'rotate')
+               obj3d.traverse(o => o.geometry?.rotateX(Math.PI / 2));
+            else if (scale !== 1)
+               obj3d.scale.set(scale, scale, scale);
+
+            scene.add(obj3d);
+
+            const latex = create('TLatex');
+            latex.fTitle = lbl;
+            latex.fTextAlign = 22; // center of text
+            latex.fTextColor = 3; // green
+            latex.fTextSize = 10; // absolute size
+
+            return build3d(latex);
+         }).then(text3d => {
+            // latex created in X/Y coordinates,
+            text3d.traverse(o => o.geometry?.rotateX(Math.PI / 2));
+
+            text3d.position.x = x;
+            text3d.position.z = -100;
+            scene.add(text3d);
+         });
+      }
+
+      container = document.createElement('div');
+      document.body.appendChild(container);
+
+      camera = new PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, draw_size*5 );
+      camera.position.y = draw_size*2;
+      camera.position.z = draw_size/2;
+      camera.far = draw_size * 5;
+      camera.up.set(0, 0, 1); // z scale up
+
+      scene = new Scene();
+      scene.add(new AmbientLight(0x404040));
+
+      let light = new DirectionalLight( 0xffffff );
+      light.position.set(0, 1, 0);
+      scene.add( light );
+
+      renderer = new WebGLRenderer({ antialias: true });
+      renderer.setPixelRatio( window.devicePixelRatio );
+      renderer.setSize( window.innerWidth, window.innerHeight );
+      renderer.setClearColor('white', 1);
+
+      container.appendChild( renderer.domElement );
+
+      stats = new Stats();
+      container.appendChild( stats.dom );
+
+      window.addEventListener( 'resize', onWindowResize, false );
+
+      let server = 'https://root.cern/js/files/',
+          filename = server + 'hsimple.root',
+          filename2 = server + 'graph2d.root',
+          filename3 = server + 'geom/simple_alice.json.gz',
+          filename4 = server + 'tutorials_fit.root';
+
+
+      let file = await openFile(filename);
+      let hist2 = await file.readObject('hpxpy');
+
+      await create3d(hist2, 'lego2', 150, '#color[2]{TH2} #color[4]{lego} plot');
+
+      let tuple = await file.readObject('ntuple');
+      let hist3 = await treeDraw(tuple, 'px:py:pz;hbins:15');
+
+      await create3d(hist3, 'box3', -150, '#color[2]{TH3} #color[4]{box} plot');
+
+      let file4 = await openFile(filename4);
+      let canv = await file4.readObject('fit2a');
+
+      await create3d(canv, '', 400, '#color[2]{TCanvas} with #color[4]{TH2} and #color[4]{TF2}');
+
+      let geom = await httpRequest(filename3, 'object');
+      await create3d(geom, '', -400, '#color[2]{Geometry} build', 0.2);
+
+      let file2 = await openFile(filename2);
+      let gr2 = await file2.readObject('Graph2D');
+
+      await create3d(gr2, 'p', 650, '#color[2]{TGraph2D} drawing with #color[4]{p}');
+
+      let latex = create('TLatex');
+      latex.fTitle = 'C(x) = d #sqrt{#frac{2}{#lambdaD}}  #int^{x}_{0}cos(#frac{#pi}{2}t^{2})dt';
+      latex.fTextAlign = 22;
+      latex.fTextColor = 9;
+      latex.fTextSize = 10;
+      await create3d(latex, 'p', -600, '#color[2]{TLatex} drawing', 'rotate');
+
+      camera.updateProjectionMatrix();
+
+      animate();
+
+   </script>
+</body>
+
+</html>

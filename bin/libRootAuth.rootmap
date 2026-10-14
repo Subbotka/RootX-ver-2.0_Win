@@ -1,0 +1,13 @@
+{ decls }
+namespace ROOT { namespace Deprecated {  } }
+
+[ libRootAuth.dll ]
+# List of selected classes
+class ROOT::Deprecated::TAuthenticate
+class ROOT::Deprecated::THostAuth
+class ROOT::Deprecated::TRootAuth
+class ROOT::Deprecated::TRootSecContext
+header TAuthenticate.h
+header THostAuth.h
+header TRootAuth.h
+header TRootSecContext.h

@@ -1,0 +1,4 @@
+[ libROOTMLDataLoader.dll ]
+# List of selected namespaces
+namespace ROOT::Experimental::Internal::ML
+namespace ROOT::Experimental::ML

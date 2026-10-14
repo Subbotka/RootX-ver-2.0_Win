@@ -1,0 +1,430 @@
+{ decls }
+namespace std {  }
+class RooAbsArg;
+template <typename T> class RooSTLRefCountList;
+class RooArgSet;
+template <typename RooCollection_t> class RooCollectionProxy;
+class RooArgList;
+class RooAbsReal;
+template <typename T> class RooTemplateProxy;
+class RooAbsCategory;
+class RooAbsRealLValue;
+class RooAbsPdf;
+class RooHistFunc;
+class RooRealVar;
+class RooMultiCategory;
+class RooAbsCategoryLValue;
+class RooAbsCacheElement;
+template <typename T> class RooCacheManager;
+class RooAbsCachedReal;
+template <typename Base_t> class RooAbsSelfCached;
+class RooAbsCachedPdf;
+namespace RooFit { namespace Detail {  } }
+namespace RooStats {  }
+namespace RooFit { namespace TestStatistics {  } }
+
+[ libRooFitCore.dll ]
+# List of selected classes
+class Roo1DTable
+class RooAICRegistry
+class RooAbsAnaConvPdf
+class RooAbsArg
+class RooAbsBinning
+class RooAbsCache
+class RooAbsCacheElement
+class RooAbsCachedPdf
+class RooAbsCachedPdf::PdfCacheElem
+class RooAbsCachedReal
+class RooAbsCategory
+class RooAbsCategoryLValue
+class RooAbsCollection
+class RooAbsData
+class RooAbsDataStore
+class RooAbsFunc
+class RooAbsGenContext
+class RooAbsHiddenReal
+class RooAbsLValue
+class RooAbsMCStudyModule
+class RooAbsMoment
+class RooAbsPdf
+class RooAbsPdf::GenSpec
+class RooAbsProxy
+class RooAbsReal
+class RooAbsRealLValue
+class RooAbsSelfCached<RooAbsCachedPdf>
+class RooAbsSelfCached<RooAbsCachedReal>
+class RooAbsSelfCached<class RooAbsCachedPdf>
+class RooAbsSelfCached<class RooAbsCachedReal>
+class RooAbsSelfCachedPdf
+class RooAbsSelfCachedReal
+class RooAbsStudy
+class RooAddGenContext
+class RooAddModel
+class RooAddPdf
+class RooAddition
+class RooArgList
+class RooArgProxy
+class RooArgSet
+class RooBinSamplingPdf
+class RooBinWidthFunction
+class RooBinnedGenContext
+class RooBinning
+class RooBinningCategory
+class RooBrentRootFinder
+class RooCacheManager<RooAbsCacheElement>
+class RooCacheManager<class RooAbsCacheElement>
+class RooCacheManager<std::vector<double> >
+class RooCacheManager<vector<double> >
+class RooCachedPdf
+class RooCachedReal
+class RooCatType
+class RooCategory
+class RooCategoryProxy
+class RooCategorySharedProperties
+class RooChangeTracker
+class RooCmdArg
+class RooCmdConfig
+class RooCollectionProxy<RooArgList>
+class RooCollectionProxy<RooArgSet>
+class RooCollectionProxy<class RooArgList>
+class RooCollectionProxy<class RooArgSet>
+class RooCompositeDataStore
+class RooConstVar
+class RooConstraintSum
+class RooConvCoefVar
+class RooConvGenContext
+class RooCurve
+class RooDLLSignificanceMCSModule
+class RooDataHist
+class RooDataHistSliceIter
+class RooDataProjBinding
+class RooDataSet
+class RooDerivative
+class RooDirItem
+class RooDouble
+class RooEffGenContext
+class RooEffProd
+class RooEfficiency
+class RooEllipse
+class RooErrorVar
+class RooExpensiveObjectCache
+class RooExpensiveObjectCache::ExpensiveObject
+class RooExtendPdf
+class RooExtendedBinding
+class RooExtendedTerm
+class RooFFTConvPdf
+class RooFIter
+class RooFactoryWSTool
+class RooFirstMoment
+class RooFit::Detail::RooFixedProdPdf
+class RooFit::Detail::RooNLLVarNew
+class RooFit::Detail::RooNormalizedPdf
+class RooFit::TestStatistics::RooRealL
+class RooFitResult
+class RooFormulaVar
+class RooFracRemainder
+class RooFunctor
+class RooGenContext
+class RooGenFitStudy
+class RooGenericPdf
+class RooHist
+class RooHistFunc
+class RooHistPdf
+class RooInvTransform
+class RooLinTransBinning
+class RooLinearCombination
+class RooLinearVar
+class RooLinkedList
+class RooLinkedListElem
+class RooListProxy
+class RooMCStudy
+class RooMappedCategory
+class RooMappedCategory::Entry
+class RooMinimizer
+class RooMoment
+class RooMsgService
+class RooMsgService::StreamConfig
+class RooMultiCategory
+class RooMultiPdf
+class RooMultiReal
+class RooMultiVarGaussian
+class RooMultiVarGaussian::AnaIntData
+class RooMultiVarGaussian::GenData
+class RooNumCdf
+class RooNumConvPdf
+class RooNumConvolution
+class RooNumGenConfig
+class RooNumIntConfig
+class RooNumIntFactory
+class RooNumRunningInt
+class RooObjCacheManager
+class RooParamBinning
+class RooPlot
+class RooPlotable
+class RooPolyFunc
+class RooPolyVar
+class RooPrintable
+class RooProdGenContext
+class RooProdPdf
+class RooProduct
+class RooProfileLL
+class RooProjectedPdf
+class RooPullVar
+class RooQuasiRandomGenerator
+class RooRandom
+class RooRandomizeParamMCSModule
+class RooRangeBinning
+class RooRangeBoolean
+class RooRatio
+class RooRealBinding
+class RooRealConstant
+class RooRealIntegral
+class RooRealProxy
+class RooRealSumFunc
+class RooRealSumPdf
+class RooRealVar
+class RooRealVarSharedProperties
+class RooRecursiveFraction
+class RooRefArray
+class RooRefCountList
+class RooResolutionModel
+class RooSTLRefCountList<RooAbsArg>
+class RooSTLRefCountList<class RooAbsArg>
+class RooSecondMoment
+class RooSetProxy
+class RooSharedProperties
+class RooSimGenContext
+class RooSimSplitGenContext
+class RooSimultaneous
+class RooStats::ModelConfig
+class RooStreamParser
+class RooStringVar
+class RooStudyManager
+class RooStudyPackage
+class RooSuperCategory
+class RooTObjWrap
+class RooTable
+class RooTemplateProxy<RooAbsCategory>
+class RooTemplateProxy<RooAbsCategoryLValue>
+class RooTemplateProxy<RooAbsPdf>
+class RooTemplateProxy<RooAbsReal>
+class RooTemplateProxy<RooAbsRealLValue>
+class RooTemplateProxy<RooHistFunc>
+class RooTemplateProxy<RooMultiCategory>
+class RooTemplateProxy<RooRealVar>
+class RooTemplateProxy<class RooAbsCategory>
+class RooTemplateProxy<class RooAbsCategoryLValue>
+class RooTemplateProxy<class RooAbsPdf>
+class RooTemplateProxy<class RooAbsReal>
+class RooTemplateProxy<class RooAbsRealLValue>
+class RooTemplateProxy<class RooHistFunc const>
+class RooTemplateProxy<class RooHistFunc>
+class RooTemplateProxy<class RooMultiCategory>
+class RooTemplateProxy<class RooRealVar>
+class RooTemplateProxy<const RooHistFunc>
+class RooThresholdCategory
+class RooTrace
+class RooTreeData
+class RooTreeDataStore
+class RooTruthModel
+class RooUniformBinning
+class RooVectorDataStore
+class RooVectorDataStore::CatVector
+class RooVectorDataStore::RealFullVector
+class RooVectorDataStore::RealVector
+class RooWorkspace
+class RooWorkspace::CodeRepo
+class RooWorkspace::WSDir
+class RooWorkspaceHandle
+class RooWrapperPdf
+class list<RooAbsData*>
+class list<RooAbsStudy*>
+class list<TObject*>
+class list<class RooAbsData*__ptr64>
+class list<class RooAbsStudy*__ptr64>
+class list<class TObject*__ptr64>
+class map<basic_string<char,struct std::char_traits<char>,allocator<char> >,class RooAbsData*__ptr64,struct std::less<basic_string<char,struct std::char_traits<char>,allocator<char> > >,allocator<struct std::pair<const basic_string<char,struct std::char_traits<char>,allocator<char> >,class RooAbsData*__ptr64> > >
+class map<basic_string<char,struct std::char_traits<char>,allocator<char> >,class RooAbsDataStore*__ptr64,struct std::less<basic_string<char,struct std::char_traits<char>,allocator<char> > >,allocator<struct std::pair<const basic_string<char,struct std::char_traits<char>,allocator<char> >,class RooAbsDataStore*__ptr64> > >
+class map<basic_string<char,struct std::char_traits<char>,allocator<char> >,class RooAbsPdf*__ptr64,struct std::less<basic_string<char,struct std::char_traits<char>,allocator<char> > >,allocator<struct std::pair<const basic_string<char,struct std::char_traits<char>,allocator<char> >,class RooAbsPdf*__ptr64> > >
+class map<basic_string<char,struct std::char_traits<char>,allocator<char> >,class RooDataHist*__ptr64,struct std::less<basic_string<char,struct std::char_traits<char>,allocator<char> > >,allocator<struct std::pair<const basic_string<char,struct std::char_traits<char>,allocator<char> >,class RooDataHist*__ptr64> > >
+class map<basic_string<char,struct std::char_traits<char>,allocator<char> >,class RooDataSet*__ptr64,struct std::less<basic_string<char,struct std::char_traits<char>,allocator<char> > >,allocator<struct std::pair<const basic_string<char,struct std::char_traits<char>,allocator<char> >,class RooDataSet*__ptr64> > >
+class map<basic_string<char,struct std::char_traits<char>,allocator<char> >,class TH1*__ptr64,struct std::less<basic_string<char,struct std::char_traits<char>,allocator<char> > >,allocator<struct std::pair<const basic_string<char,struct std::char_traits<char>,allocator<char> >,class TH1*__ptr64> > >
+class map<std::string,RooAbsDataStore*>
+class map<std::string,RooAbsPdf*>
+class map<std::string,TH1*>
+class map<string,RooAbsData*>
+class map<string,RooAbsDataStore*>
+class map<string,RooAbsPdf*>
+class map<string,RooDataHist*>
+class map<string,RooDataSet*>
+class map<string,TH1*>
+class pair<basic_string<char,struct std::char_traits<char>,allocator<char> >,class RooAbsData*__ptr64>
+class pair<int,RooLinkedListElem*>
+class pair<int,class RooLinkedListElem*__ptr64>
+class pair<std::string,RooAbsData*>
+class pair<string,RooAbsData*>
+class stack<RooAbsArg*,deque<RooAbsArg*> >
+class stack<class RooAbsArg*__ptr64,deque<class RooAbsArg*__ptr64> >
+header Roo1DTable.h
+header RooAICRegistry.h
+header RooAbsAnaConvPdf.h
+header RooAbsArg.h
+header RooAbsBinning.h
+header RooAbsCache.h
+header RooAbsCacheElement.h
+header RooAbsCachedPdf.h
+header RooAbsCachedReal.h
+header RooAbsCategory.h
+header RooAbsCategoryLValue.h
+header RooAbsCollection.h
+header RooAbsData.h
+header RooAbsDataStore.h
+header RooAbsFunc.h
+header RooAbsGenContext.h
+header RooAbsHiddenReal.h
+header RooAbsLValue.h
+header RooAbsMCStudyModule.h
+header RooAbsMoment.h
+header RooAbsPdf.h
+header RooAbsProxy.h
+header RooAbsReal.h
+header RooAbsRealLValue.h
+header RooAbsStudy.h
+header RooAddGenContext.h
+header RooAddModel.h
+header RooAddPdf.h
+header RooAddition.h
+header RooArgList.h
+header RooArgProxy.h
+header RooArgSet.h
+header RooBinSamplingPdf.h
+header RooBinWidthFunction.h
+header RooBinnedGenContext.h
+header RooBinning.h
+header RooBinningCategory.h
+header RooBrentRootFinder.h
+header RooCachedPdf.h
+header RooCachedReal.h
+header RooFitLegacy\RooCatTypeLegacy.h
+header RooCategory.h
+header RooFitLegacy\RooCategorySharedProperties.h
+header RooChangeTracker.h
+header RooCmdArg.h
+header RooCmdConfig.h
+header RooCompositeDataStore.h
+header RooConstVar.h
+header RooConstraintSum.h
+header RooConvCoefVar.h
+header RooConvGenContext.h
+header RooCurve.h
+header RooDLLSignificanceMCSModule.h
+header RooDataHist.h
+header RooDataHistSliceIter.h
+header RooDataProjBinding.h
+header RooDataSet.h
+header RooDerivative.h
+header RooDirItem.h
+header RooDouble.h
+header RooEffGenContext.h
+header RooEffProd.h
+header RooEfficiency.h
+header RooEllipse.h
+header RooErrorVar.h
+header RooExpensiveObjectCache.h
+header RooExtendPdf.h
+header RooExtendedBinding.h
+header RooExtendedTerm.h
+header RooFFTConvPdf.h
+header RooLinkedListIter.h
+header RooFactoryWSTool.h
+header RooFirstMoment.h
+header RooProdPdf.h
+header RooFit\Detail\RooNLLVarNew.h
+header RooFit\Detail\RooNormalizedPdf.h
+header RooFit\TestStatistics\RooRealL.h
+header RooFitResult.h
+header RooFormulaVar.h
+header RooFracRemainder.h
+header RooFunctor.h
+header RooGenContext.h
+header RooGenFitStudy.h
+header RooGenericPdf.h
+header RooHist.h
+header RooHistFunc.h
+header RooHistPdf.h
+header RooInvTransform.h
+header RooLinTransBinning.h
+header RooLinearCombination.h
+header RooLinearVar.h
+header RooLinkedList.h
+header RooLinkedListElem.h
+header RooMCStudy.h
+header RooMappedCategory.h
+header RooMinimizer.h
+header RooMoment.h
+header RooMsgService.h
+header RooMultiCategory.h
+header RooMultiPdf.h
+header RooMultiReal.h
+header RooMultiVarGaussian.h
+header RooNumCdf.h
+header RooNumConvPdf.h
+header RooNumConvolution.h
+header RooNumGenConfig.h
+header RooNumIntConfig.h
+header RooNumIntFactory.h
+header RooNumRunningInt.h
+header RooObjCacheManager.h
+header RooParamBinning.h
+header RooPlot.h
+header RooPlotable.h
+header RooPolyFunc.h
+header RooPolyVar.h
+header RooPrintable.h
+header RooProdGenContext.h
+header RooProduct.h
+header RooProfileLL.h
+header RooProjectedPdf.h
+header RooPullVar.h
+header RooQuasiRandomGenerator.h
+header RooRandom.h
+header RooRandomizeParamMCSModule.h
+header RooRangeBinning.h
+header RooRangeBoolean.h
+header RooRatio.h
+header RooRealBinding.h
+header RooRealConstant.h
+header RooRealIntegral.h
+header RooRealSumFunc.h
+header RooRealSumPdf.h
+header RooRealVar.h
+header RooRealVarSharedProperties.h
+header RooRecursiveFraction.h
+header RooRefCountList.h
+header RooResolutionModel.h
+header RooSecondMoment.h
+header RooSharedProperties.h
+header RooSimGenContext.h
+header RooSimSplitGenContext.h
+header RooSimultaneous.h
+header RooFit\ModelConfig.h
+header RooStreamParser.h
+header RooStringVar.h
+header RooStudyManager.h
+header RooStudyPackage.h
+header RooSuperCategory.h
+header RooTObjWrap.h
+header RooTable.h
+header RooThresholdCategory.h
+header RooTrace.h
+header RooFitLegacy\RooTreeData.h
+header RooTreeDataStore.h
+header RooTruthModel.h
+header RooUniformBinning.h
+header RooVectorDataStore.h
+header RooWorkspace.h
+header RooWorkspaceHandle.h
+header RooWrapperPdf.h
+# List of selected namespaces
+namespace RooFitShortHand
+# List of selected typedefs and outer classes

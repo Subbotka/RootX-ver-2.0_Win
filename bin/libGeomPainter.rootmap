@@ -1,0 +1,6 @@
+[ libGeomPainter.dll ]
+# List of selected classes
+class TGeoPainter
+class TGeoTrack
+header TGeoPainter.h
+header TGeoTrack.h

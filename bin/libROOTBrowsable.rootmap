@@ -1,0 +1,21 @@
+{ decls }
+namespace ROOT { namespace Browsable {  } }
+
+[ libROOTBrowsable.dll ]
+# List of selected classes
+class ROOT::Browsable::RAnyObjectHolder
+class ROOT::Browsable::RElement
+class ROOT::Browsable::RGroup
+class ROOT::Browsable::RHolder
+class ROOT::Browsable::RItem
+class ROOT::Browsable::RLevelIter
+class ROOT::Browsable::RNTupleItem
+class ROOT::Browsable::RProvider
+class ROOT::Browsable::RSysFile
+class ROOT::Browsable::RSysFileItem
+class ROOT::Browsable::RWrapper
+class ROOT::Browsable::TKeyItem
+class ROOT::Browsable::TObjectHolder
+class ROOT::Browsable::TObjectItem
+# List of selected namespaces
+namespace ROOT::Browsable

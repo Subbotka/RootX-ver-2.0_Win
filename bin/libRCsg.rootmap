@@ -1,0 +1,9 @@
+{ decls }
+namespace RootCsg {  }
+
+[ libRCsg.dll ]
+# List of selected classes
+class RootCsg::TBaseMesh
+header CsgOps.h
+# List of selected namespaces
+namespace RootCsg

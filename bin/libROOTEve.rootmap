@@ -1,0 +1,150 @@
+{ decls }
+namespace ROOT { namespace Experimental {  } }
+namespace std {  }
+namespace ROOT { namespace Experimental { template <typename TT> class REveVectorT; } }
+namespace ROOT { namespace Experimental { template <typename TT> class REveVector4T; } }
+namespace ROOT { namespace Experimental { template <typename TT> class REveVector2T; } }
+namespace ROOT { namespace Experimental { template <typename TT> class REvePathMarkT; } }
+namespace ROOT { namespace Experimental { template <typename TT> class REveRecTrackT; } }
+
+[ libROOTEve.dll ]
+# List of selected classes
+class ROOT::Experimental::REve3DProjection
+class ROOT::Experimental::REveAunt
+class ROOT::Experimental::REveAuntAsList
+class ROOT::Experimental::REveBox
+class ROOT::Experimental::REveBoxProjected
+class ROOT::Experimental::REveBoxSet
+class ROOT::Experimental::REveCalo2D
+class ROOT::Experimental::REveCalo3D
+class ROOT::Experimental::REveCaloData
+class ROOT::Experimental::REveCaloData::SliceInfo_t
+class ROOT::Experimental::REveCaloDataHist
+class ROOT::Experimental::REveCaloDataVec
+class ROOT::Experimental::REveCaloLego
+class ROOT::Experimental::REveCaloViz
+class ROOT::Experimental::REveChunkManager
+class ROOT::Experimental::REveChunkManager::iterator
+class ROOT::Experimental::REveCluster
+class ROOT::Experimental::REveCompound
+class ROOT::Experimental::REveCompoundProjected
+class ROOT::Experimental::REveDataCollection
+class ROOT::Experimental::REveDataColumn
+class ROOT::Experimental::REveDataItem
+class ROOT::Experimental::REveDataItemList
+class ROOT::Experimental::REveDataProxyBuilderBase
+class ROOT::Experimental::REveDataSimpleProxyBuilder
+class ROOT::Experimental::REveDataTable
+class ROOT::Experimental::REveDigitSet
+class ROOT::Experimental::REveElement
+class ROOT::Experimental::REveEllipsoid
+class ROOT::Experimental::REveEllipsoidProjected
+class ROOT::Experimental::REveException
+class ROOT::Experimental::REveFrameBox
+class ROOT::Experimental::REveGeoManagerHolder
+class ROOT::Experimental::REveGeoPolyShape
+class ROOT::Experimental::REveGeoShape
+class ROOT::Experimental::REveGeoShapeExtract
+class ROOT::Experimental::REveGeoShapeProjected
+class ROOT::Experimental::REveGeoTopNodeData
+class ROOT::Experimental::REveHit
+class ROOT::Experimental::REveJetCone
+class ROOT::Experimental::REveJetConeProjected
+class ROOT::Experimental::REveLine
+class ROOT::Experimental::REveLineProjected
+class ROOT::Experimental::REveMCRecCrossRef
+class ROOT::Experimental::REveMCTrack
+class ROOT::Experimental::REveMagField
+class ROOT::Experimental::REveMagFieldConst
+class ROOT::Experimental::REveMagFieldDuo
+class ROOT::Experimental::REveManager
+class ROOT::Experimental::REvePathMarkT<Double_t>
+class ROOT::Experimental::REvePathMarkT<Float_t>
+class ROOT::Experimental::REvePathMarkT<double>
+class ROOT::Experimental::REvePathMarkT<float>
+class ROOT::Experimental::REvePointSelector
+class ROOT::Experimental::REvePointSelectorConsumer
+class ROOT::Experimental::REvePointSet
+class ROOT::Experimental::REvePointSetArray
+class ROOT::Experimental::REvePointSetProjected
+class ROOT::Experimental::REvePolygonSetProjected
+class ROOT::Experimental::REveProjectable
+class ROOT::Experimental::REveProjected
+class ROOT::Experimental::REveProjection
+class ROOT::Experimental::REveProjection::PreScaleEntry_t
+class ROOT::Experimental::REveProjectionManager
+class ROOT::Experimental::REveRGBAPalette
+class ROOT::Experimental::REveRPhiProjection
+class ROOT::Experimental::REveRecCascade
+class ROOT::Experimental::REveRecKink
+class ROOT::Experimental::REveRecTrackT<Double_t>
+class ROOT::Experimental::REveRecTrackT<Float_t>
+class ROOT::Experimental::REveRecTrackT<double>
+class ROOT::Experimental::REveRecTrackT<float>
+class ROOT::Experimental::REveRecV0
+class ROOT::Experimental::REveRefBackPtr
+class ROOT::Experimental::REveRefCnt
+class ROOT::Experimental::REveRenderData
+class ROOT::Experimental::REveRhoZProjection
+class ROOT::Experimental::REveScene
+class ROOT::Experimental::REveSceneInfo
+class ROOT::Experimental::REveSceneList
+class ROOT::Experimental::REveSecondarySelectable
+class ROOT::Experimental::REveSelection
+class ROOT::Experimental::REveSelectorToEventList
+class ROOT::Experimental::REveShape
+class ROOT::Experimental::REveStraightLineSet
+class ROOT::Experimental::REveStraightLineSetProjected
+class ROOT::Experimental::REveTableViewInfo
+class ROOT::Experimental::REveText
+class ROOT::Experimental::REveTrack
+class ROOT::Experimental::REveTrackList
+class ROOT::Experimental::REveTrackListProjected
+class ROOT::Experimental::REveTrackProjected
+class ROOT::Experimental::REveTrackPropagator
+class ROOT::Experimental::REveTrans
+class ROOT::Experimental::REveUtil
+class ROOT::Experimental::REveVSD
+class ROOT::Experimental::REveVector2T<Double_t>
+class ROOT::Experimental::REveVector2T<Float_t>
+class ROOT::Experimental::REveVector2T<double>
+class ROOT::Experimental::REveVector2T<float>
+class ROOT::Experimental::REveVector4T<Double_t>
+class ROOT::Experimental::REveVector4T<Float_t>
+class ROOT::Experimental::REveVector4T<double>
+class ROOT::Experimental::REveVector4T<float>
+class ROOT::Experimental::REveVectorT<Double_t>
+class ROOT::Experimental::REveVectorT<Float_t>
+class ROOT::Experimental::REveVectorT<double>
+class ROOT::Experimental::REveVectorT<float>
+class ROOT::Experimental::REveViewContext
+class ROOT::Experimental::REveViewer
+class ROOT::Experimental::REveViewerList
+class ROOT::Experimental::REveXZProjection
+class ROOT::Experimental::REveYZProjection
+class ROOT::Experimental::REveZXProjection
+class ROOT::Experimental::REveZYProjection
+class list<ROOT::Experimental::REveElement*>
+class list<class ROOT::Experimental::REveElement*__ptr64>
+class set<ROOT::Experimental::REveElement*>
+class set<class ROOT::Experimental::REveElement*__ptr64,struct std::less<class ROOT::Experimental::REveElement*__ptr64> >
+class vector<ROOT::Experimental::REveProjection::PreScaleEntry_t>
+class vector<struct ROOT::Experimental::REveProjection::PreScaleEntry_t>
+# List of selected typedefs and outer classes
+typedef ROOT::Experimental::REveVector
+typedef ROOT::Experimental::REveVectorF
+typedef ROOT::Experimental::REveVectorD
+typedef ROOT::Experimental::REveVector4
+typedef ROOT::Experimental::REveVector4F
+typedef ROOT::Experimental::REveVector4D
+typedef ROOT::Experimental::REveVector2
+typedef ROOT::Experimental::REveVector2F
+typedef ROOT::Experimental::REveVector2D
+typedef ROOT::Experimental::REvePathMark
+typedef ROOT::Experimental::REvePathMarkF
+typedef ROOT::Experimental::REvePathMarkD
+typedef ROOT::Experimental::REveRecTrack
+typedef ROOT::Experimental::REveRecTrackF
+typedef ROOT::Experimental::REveRecTrackD
+# List of selected vars
+var ROOT::Experimental::gEve

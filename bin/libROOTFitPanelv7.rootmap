@@ -1,0 +1,13 @@
+{ decls }
+namespace ROOT { namespace Experimental {  } }
+
+[ libROOTFitPanelv7.dll ]
+# List of selected classes
+class ROOT::Experimental::RFitPanel
+class ROOT::Experimental::RFitPanelModel
+class ROOT::Experimental::RFitPanelModel::RComboBoxItem
+class ROOT::Experimental::RFitPanelModel::RFuncPar
+class ROOT::Experimental::RFitPanelModel::RFuncParsList
+class ROOT::Experimental::RFitPanelModel::RItemInfo
+class ROOT::Experimental::RFitPanelModel::RMethodInfo
+class ROOT::Experimental::RFitPanelModel::RMinimezerAlgorithm

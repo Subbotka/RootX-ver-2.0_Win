@@ -1,0 +1,28 @@
+{ decls }
+namespace ROOT { namespace VecOps {  } }
+namespace ROOT { namespace VecOps { template <typename T> class RVec; } }
+namespace ROOT { namespace Internal { namespace VecOps {  } } }
+
+[ libROOTVecOps.dll ]
+# List of selected classes
+class ROOT::Internal::VecOps::SmallVectorBase
+class ROOT::VecOps::RVec<Long64_t>
+class ROOT::VecOps::RVec<ULong64_t>
+class ROOT::VecOps::RVec<__int64>
+class ROOT::VecOps::RVec<basic_string<char,struct std::char_traits<char>,allocator<char> > >
+class ROOT::VecOps::RVec<bool>
+class ROOT::VecOps::RVec<char>
+class ROOT::VecOps::RVec<double>
+class ROOT::VecOps::RVec<float>
+class ROOT::VecOps::RVec<int>
+class ROOT::VecOps::RVec<long>
+class ROOT::VecOps::RVec<short>
+class ROOT::VecOps::RVec<std::string>
+class ROOT::VecOps::RVec<string>
+class ROOT::VecOps::RVec<unsigned __int64>
+class ROOT::VecOps::RVec<unsigned char>
+class ROOT::VecOps::RVec<unsigned int>
+class ROOT::VecOps::RVec<unsigned long>
+class ROOT::VecOps::RVec<unsigned short>
+# List of selected namespaces
+namespace ROOT::VecOps

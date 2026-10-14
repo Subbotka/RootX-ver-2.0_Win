@@ -1,0 +1,10 @@
+[ libASImage.dll ]
+# List of selected classes
+class TASImage
+class TASImagePlugin
+class TASPluginGS
+class TASPngWriter
+header TASImage.h
+header TASImagePlugin.h
+header TASPluginGS.h
+header TASPngWriter.h
